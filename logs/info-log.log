@@ -1,0 +1,28 @@
+2026-03-29 13:57:56.760 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-03-29 13:57:56.887 [restartedMain] INFO  c.i.prism.moss.MossApplication - Starting MossApplication using Java 17.0.13 with PID 27708 (D:\meta-business\project\backend-project\moss\target\classes started by 10316 in D:\meta-business\project\backend-project\moss)
+2026-03-29 13:57:56.889 [restartedMain] INFO  c.i.prism.moss.MossApplication - The following 1 profile is active: "dev"
+2026-03-29 13:57:57.009 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-29 13:57:57.009 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-29 13:57:59.263 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-29 13:57:59.269 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-03-29 13:57:59.329 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 0 Redis repository interfaces.
+2026-03-29 13:58:01.957 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8070 (http)
+2026-03-29 13:58:01.979 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8070"]
+2026-03-29 13:58:01.983 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-29 13:58:01.984 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+2026-03-29 13:58:02.179 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-03-29 13:58:02.180 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5170 ms
+2026-03-29 13:58:07.701 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-03-29 13:58:07.751 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8070"]
+2026-03-29 13:58:07.823 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8070 (http) with context path ''
+2026-03-29 13:58:07.859 [restartedMain] INFO  c.i.prism.moss.MossApplication - Started MossApplication in 11.812 seconds (process running for 12.333)
+2026-03-29 15:46:06.738 [http-nio-8070-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-29 15:46:06.738 [http-nio-8070-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-29 15:46:06.740 [http-nio-8070-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-03-29 15:46:07.115 [http-nio-8070-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-29 15:46:07.707 [http-nio-8070-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1fcda521
+2026-03-29 15:46:07.710 [http-nio-8070-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-29 15:46:09.379 [http-nio-8070-exec-2] INFO  c.i.p.m.service.impl.AuthServiceImpl - 用户登录成功: email=1031633784@qq.com, userId=207
+2026-03-29 15:49:06.236 [http-nio-8070-exec-4] INFO  c.i.p.m.service.impl.AuthServiceImpl - 用户登录成功: email=1031633784@qq.com, userId=207
+2026-03-29 18:13:47.403 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-29 18:13:47.409 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.infinite.prism.serasi.mapper.CustomerMapper">
+
+    <select id="findByPushEnabledTrue" resultType="com.infinite.prism.moss.entity.DO.Customer">
+        SELECT * FROM customer WHERE push_enabled = true
+    </select>
+    <select id="listByTagsList" resultType="com.infinite.prism.moss.entity.DO.Customer">
+        SELECT * FROM customer WHERE id IN (
+        SELECT customer_id FROM customer_tag WHERE tag_id IN (
+        <foreach item="tag" collection="tagIds" separator="," close="">
+            #{tag}
+        </foreach>
+        )
+        )
+    </select>
+</mapper>

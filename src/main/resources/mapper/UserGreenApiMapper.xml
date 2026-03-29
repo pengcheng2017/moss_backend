@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.infinite.prism.serasi.mapper.UserGreenApiMapper">
+
+    <select id="pageList" resultType="com.infinite.prism.moss.entity.DO.UserGreenApi">
+        SELECT
+        ug.instance_id, ug.email, ug.follow_up_status, ug.token, ug.base_url, ug.create_time
+        FROM user_green_api ug
+        WHERE 1 = 1
+        <if test="keywords != null and keywords != ''">
+            AND instance_id LIKE CONCAT('%', #{keywords}, '%')
+        </if>
+    </select>
+</mapper>
